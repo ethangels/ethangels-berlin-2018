@@ -2,6 +2,7 @@ a {
   color: _palette(ea-secondary);
   text-decoration: none;
 
+
   &.highlight {
     border-bottom: 2px dashed _palette(red-11a);
     transition: border-bottom 1s ease;
