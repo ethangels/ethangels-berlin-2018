@@ -24,33 +24,32 @@ a {
     padding-bottom: 0.25rem; }
 
 body {
-  background: #f1f1f1;
-  font-family: 'Lato'; }
+  background: url("../images/grid.svg");
+  font-family: 'Lato';
+  background-color: yellow; }
 
 footer {
   margin: 0 auto;
   max-width: 50rem;
   background-color: white;
-  padding: 3rem; }
+  padding: 3rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); }
 
 .footer-inner {
   color: #6f7779; }
 
 header {
   max-width: 50rem;
-  margin: 0 auto;
-  text-align: center;
-  background-color: white;
-  padding: 3rem 3rem 0.75rem 3rem;
-  background-color: #bf93d8; }
+  margin: 3rem auto 2rem auto;
+  text-align: center; }
   header a {
     color: white; }
   header > div {
     max-width: 50rem;
     margin: 0 auto; }
     header > div .logo {
-      height: 50px;
-      background: url("../images/ea-logo-white-out.svg");
+      height: 5rem;
+      background: url("../images/ea-logo.svg");
       background-repeat: no-repeat;
       background-position: center 0rem;
       text-indent: -999rem;
@@ -65,11 +64,13 @@ header {
   max-width: 50rem;
   margin: 0 auto;
   background-color: white;
-  padding: 0 3rem 3rem 3rem; }
+  padding: 0 3rem 3rem 3rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); }
 
 [role=navigation] {
   background-color: white;
-  padding: 3rem; }
+  padding: 1.5rem 3rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); }
   [role=navigation] ul {
     padding-bottom: 1rem; }
     [role=navigation] ul li {
