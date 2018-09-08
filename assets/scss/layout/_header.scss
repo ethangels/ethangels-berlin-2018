@@ -13,14 +13,15 @@ header {
   > div {
     max-width: _breakpoint(step-max);
     margin: 0 auto;
-    padding: 1rem 1.5rem;
+    //padding: 1rem 1.5rem;
 
     .logo {
+      height: 116px;
       background: url("../images/ea-logo.svg");
       background-repeat: no-repeat;
       background-position: center 0rem;
       text-indent: -999rem;
-      overflow: hidden;
+      //overflow: hidden;
       display: block;
       background-size: 559px 116px;
     }
