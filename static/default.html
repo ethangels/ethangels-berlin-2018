@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>ETHBerlin // ETH Angels</title>
+    <title>ETH Angels</title>
     <meta property="og:title" content="WarrantCanaryMonitor" />
     <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.11/semantic.min.css" integrity="sha256-g4+HzlttFiqgeuCnx3m308o0ahuBZ+0CRxaRWfSL0BU=" crossorigin="anonymous" />-->
     <link rel="stylesheet" type="text/html" href="/css/general.css">
@@ -12,29 +12,21 @@
 </head>
 
 <body>
-    <div id="menu">
-        <div>
-            <a href="/" class="item">
-                <i class="home icon"></i> Home
-            </a>
-            <a href="/about" class="item">
-                <i class="help circle icon"></i> About
-            </a>
-            <a href="/report" class="item">
-                <i class="protect icon"></i> Report
-            </a>
-        </div>
-    </div>
+    <header>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/report">Report</a></li>
+        </ul>
+    </header>
 
-    <!-- BODY CONTAINER -->
-    <div>
+    <main>
         {{ content }}
-    </div>
+    </main>
 
-    <!-- FOOTER -->
     <footer>
         <a href="https://github.com/ethangels/">ETHAngels</a> Created by <a target="_blank" href="https://mycrypto.com">MyCrypto</a>
     </footer>
-</body>
 
+</body>
 </html>
