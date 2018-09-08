@@ -1,6 +1,6 @@
 .flex-group {
 
-  display: inline-block;
+  //display: inline-block;
 
   > div {
     flex: none;
@@ -44,12 +44,4 @@
     }
 
   }
-}
-
-
-
-
-
-.flex-wrap {
-  flex-wrap: wrap;
 }
