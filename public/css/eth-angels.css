@@ -38,6 +38,8 @@ button {
     button.primary:hover {
       background-color: rgba(191, 147, 216, 0.8);
       color: white; }
+  button.small {
+    padding: 0.4rem 0.8rem; }
 
 em {
   color: #bf93d8;
@@ -89,7 +91,8 @@ table {
     border-width: 0 0 0.2rem 0;
     border-style: solid;
     border-color: #bf93d8;
-    color: black; }
+    color: black;
+    font-weight: 700; }
   table tbody tr {
     color: black; }
     table tbody tr td:first-child, table tbody tr th[scope=row]:first-child {
@@ -103,14 +106,14 @@ table {
     table tbody tr td {
       border: solid 1px #f7f6f4;
       padding: 0.5rem 0.5rem;
-      background-color: #f7f6f4; }
+      background-color: #f7f6f4;
+      vertical-align: text-top; }
 
 body {
   background-image: url("../images/grid.svg");
   background-repeat: repeat;
   font-family: 'Lato';
-  background-color: yellow;
-  min-width: 580px; }
+  background-color: yellow; }
 
 .flex-group > div {
   flex: none; }
@@ -139,13 +142,13 @@ body {
 
 footer {
   margin: 3rem auto;
-  max-width: 50rem;
+  max-width: 56rem;
   font-size: 0.9rem; }
   footer a {
     text-decoration: underline; }
 
 header {
-  max-width: 50rem;
+  max-width: 56rem;
   margin: 3rem auto 2rem auto;
   text-align: center;
   min-width: 570px; }
@@ -176,7 +179,7 @@ header {
 
 [role=main] {
   display: block;
-  max-width: 50rem;
+  max-width: 56rem;
   margin: 0 auto;
   background-color: white;
   padding: 2rem 3rem;
@@ -204,7 +207,7 @@ header {
         transition: color 0.75s ease; }
 
 nav {
-  max-width: 50rem;
+  max-width: 56rem;
   margin: 0 auto; }
 
 .page {

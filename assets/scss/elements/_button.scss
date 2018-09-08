@@ -18,4 +18,8 @@ button {
       color: _palette(white);
     }
   }
+
+  &.small {
+    padding: 0.4rem 0.8rem;
+  }
 }

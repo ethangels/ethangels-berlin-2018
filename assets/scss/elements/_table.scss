@@ -12,6 +12,7 @@ thead {
     border-style: solid;
     border-color: _palette(ea-secondary);
     color: black;
+    font-weight: _font(weight-bold);
   }
 }
 
@@ -36,6 +37,7 @@ tbody {
       border: solid 1px _palette(ea-secondary-50);
       padding: 0.5rem 0.5rem;
       background-color:_palette(ea-secondary-50);
+      vertical-align: text-top;
     }
   }
 }
