@@ -3,7 +3,8 @@ header {
   margin: 0 auto;
   text-align: center;
   background-color: white;
-  padding: 3rem 3rem 0 3rem;
+  padding: 3rem 3rem 0.75rem 3rem;
+  background-color: _palette(ea-secondary);
 
   a {
     color: white;
@@ -17,7 +18,7 @@ header {
 
     .logo {
       height: 50px;
-      background: url("../images/ea-logo.svg");
+      background: url("../images/ea-logo-white-out.svg");
       background-repeat: no-repeat;
       background-position: center 0rem;
       text-indent: -999rem;
