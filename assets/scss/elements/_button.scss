@@ -13,8 +13,8 @@ button {
     color: _palette(white);
 
     &:hover {
-      border: 2px solid _palette(ea-primary-80);
-      background-color: _palette(rea-primary-80);
+      //border: 2px solid _palette(ea-secondary-80);
+      background-color: _palette(ea-secondary-80);
       color: _palette(white);
     }
   }

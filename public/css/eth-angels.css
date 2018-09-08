@@ -36,8 +36,12 @@ button {
     background-color: #bf93d8;
     color: white; }
     button.primary:hover {
-      border: 2px solid;
+      background-color: rgba(191, 147, 216, 0.8);
       color: white; }
+
+em {
+  color: #bf93d8;
+  font-style: italic; }
 
 .field {
   padding: 0.75rem 0;
@@ -80,7 +84,7 @@ body {
   background-repeat: repeat;
   font-family: 'Lato';
   background-color: yellow;
-  min-width: 570px; }
+  min-width: 580px; }
 
 .flex-group {
   display: inline-block; }
@@ -91,39 +95,11 @@ body {
   .flex-group {
     display: flex;
     flex-wrap: wrap; }
-    .flex-group > div, .flex-group dl {
+    .flex-group > div {
       flex: 1;
       margin-right: 0.75rem; }
-      .flex-group > div:last-of-type, .flex-group dl:last-of-type {
+      .flex-group > div:last-of-type {
         margin-right: 0; }
-    .flex-group.width-control > div.twenty-five-percent {
-      width: 25%;
-      flex: none; }
-    .flex-group.width-control > div.fifty-percent {
-      width: 50%;
-      flex: none; }
-    .flex-group.flex-start {
-      justify-content: flex-start; }
-      .flex-group.flex-start > div, .flex-group.flex-start a {
-        flex: none;
-        margin-right: 1rem; }
-        .flex-group.flex-start > div:last-of-type, .flex-group.flex-start a:last-of-type {
-          margin-right: 0; }
-      .flex-group.flex-start > dl {
-        margin-right: 0.75rem; }
-      .flex-group.flex-start > dd, .flex-group.flex-start dt {
-        flex: none;
-        margin-right: 0.75rem !important; }
-    .flex-group.flex-end {
-      justify-content: flex-end; }
-      .flex-group.flex-end > div {
-        flex: none;
-        margin-right: 1rem; }
-        .flex-group.flex-end > div:last-of-type {
-          margin-right: 0; }
-      .flex-group.flex-end > dd, .flex-group.flex-end dt {
-        flex: none;
-        margin-right: 0.75rem !important; }
   .flex-center {
     display: flex;
     align-items: center;
@@ -144,37 +120,37 @@ footer {
   margin: 3rem auto;
   max-width: 50rem;
   font-size: 0.9rem; }
+  footer a {
+    text-decoration: underline; }
 
 header {
   max-width: 50rem;
   margin: 3rem auto 2rem auto;
   text-align: center;
   min-width: 570px; }
+  header .logo {
+    height: 5rem;
+    min-width: 3rem;
+    background: url("../images/ea-logo.svg");
+    background-repeat: no-repeat;
+    background-position: center 0rem;
+    text-indent: -999rem;
+    display: block; }
+  header .ea-tagline {
+    height: 2.5rem;
+    min-width: 3rem;
+    background: url("../images/ea-tagline.svg");
+    background-repeat: no-repeat;
+    background-position: center 0rem;
+    text-indent: -999rem;
+    display: block; }
   header a {
     color: white; }
-  header > div {
-    margin: 0 auto; }
-    header > div .logo {
-      height: 5rem;
-      min-width: 3rem;
-      background: url("../images/ea-logo.svg");
-      background-repeat: no-repeat;
-      background-position: center 0rem;
-      text-indent: -999rem;
-      display: block; }
-    header > div .ea-tagline {
-      height: 2.5rem;
-      min-width: 3rem;
-      background: url("../images/ea-tagline.svg");
-      background-repeat: no-repeat;
-      background-position: center 0rem;
-      text-indent: -999rem;
-      display: block; }
 
 @media screen and (min-width: 50rem) {
-  header > div .logo {
+  header .logo {
     background-position: top left; }
-  header > div .ea-tagline {
+  header .ea-tagline {
     background-position: center right; } }
 
 [role=main] {

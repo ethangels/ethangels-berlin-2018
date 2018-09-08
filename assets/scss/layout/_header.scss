@@ -4,42 +4,41 @@ header {
   text-align: center;
   min-width: 570px;
 
+  .logo {
+    height: 5rem;
+    min-width: 3rem;
+    background: url("../images/ea-logo.svg");
+    background-repeat: no-repeat;
+    background-position: center 0rem;
+    text-indent: -999rem;
+    display: block;
+  }
+
+  .ea-tagline {
+    height: 2.5rem;
+    min-width: 3rem;
+    background: url("../images/ea-tagline.svg");
+    background-repeat: no-repeat;
+    background-position: center 0rem;
+    text-indent: -999rem;
+    display: block;
+  }
+
   a {
     color: white;
-    //height: auto;
 
   }
   > div {
     //max-width: _breakpoint(step-max);
-    margin: 0 auto;
+    //margin: 0 auto;
 
-    .logo {
-      height: 5rem;
-      min-width: 3rem;
-      background: url("../images/ea-logo.svg");
-      background-repeat: no-repeat;
-      background-position: center 0rem;
-      text-indent: -999rem;
-      display: block;
-    }
 
-    .ea-tagline {
-      height: 2.5rem;
-      min-width: 3rem;
-      background: url("../images/ea-tagline.svg");
-      background-repeat: no-repeat;
-      background-position: center 0rem;
-      text-indent: -999rem;
-      display: block;
-    }
   }
 }
 
 @media screen and (min-width: _breakpoint(step-three)) {
 
   header {
-
-    > div {
 
       .logo {
         background-position: top left;
@@ -50,4 +49,3 @@ header {
       }
     }
   }
-}
