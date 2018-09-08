@@ -29,19 +29,29 @@ function startWebApp(){
 
     // Test Serv.
     app.get('/', (req, res)=>{
-        res.send(default_template.replace('{{ content }}', fs.readFileSync('./static/default.html', 'utf8')));
+        res.send(default_template.replace('{{ content }}', fs.readFileSync('./static/index.html', 'utf8')));
+    });
+
+
+    app.get('/report', (req, res)=>{
+        res.send(default_template.replace('{{ content }}', fs.readFileSync('./static/report.html', 'utf8')));
+    });
+
+    app.get('/scams', (req, res)=>{
+        res.send(default_template.replace('{{ content }}', fs.readFileSync('./static/scams.html', 'utf8')));
+    });
+
+    app.get('/queue', (req, res)=>{
+        res.send(default_template.replace('{{ content }}', fs.readFileSync('./static/queue.html', 'utf8')));
     });
 
     app.get('/about', (req, res)=>{
         res.send(default_template.replace('{{ content }}', fs.readFileSync('./static/about.html', 'utf8')));
     });
 
-    app.get('/report', (req, res)=>{
-        res.send(default_template.replace('{{ content }}', fs.readFileSync('./static/report.html', 'utf8')));
-    });
 
     app.get('/(/|index.html)?', function(req, res) { // Serve index.html
-        res.send(default_template.replace('{{ content }}', fs.readFileSync('./static/defaut.html', 'utf8')));
+        res.send(default_template.replace('{{ content }}', fs.readFileSync('./static/index.html', 'utf8')));
     });
 
     app.listen(port,()=>{

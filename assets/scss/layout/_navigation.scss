@@ -1,0 +1,30 @@
+[role=navigation] {
+
+    ul {
+      padding-bottom: 1rem;
+
+      li {
+        display: inline-block;
+        padding-right: 1.5rem;
+
+        a {
+          padding-bottom: 0.3125rem;
+          border-bottom: 0.1875rem solid _palette(grey-10a);
+          transition: border-bottom 0.75s ease;
+
+          &.selected, &.selected:hover {
+            border-bottom: 0.1875rem solid _palette(accessible-red);
+          }
+          &:hover {
+            border-bottom: 0.1875rem solid _palette(red);
+          }
+        }
+      }
+    }
+  }
+
+
+nav {
+  max-width: _breakpoint(step-max);
+  margin: 0 auto;
+}
