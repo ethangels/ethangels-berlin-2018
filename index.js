@@ -25,11 +25,11 @@ function startWebApp(){
     app.use(bodyparser.json());
 
     // Static Files
-    app.use(express.static(path.join(__dirname, '/public')));
+    app.use(express.static(path.join(__dirname, '/static/public')));
 
     // Test Serv.
     app.get('/', (req, res)=>{
-        res.send(default_template.replace('{{ content }}', fs.readFileSync('./static/index.html', 'utf8')));
+        res.send(default_template.replace('{{ content }}', fs.readFileSync('./static/default.html', 'utf8')));
     });
 
     app.get('/about', (req, res)=>{
@@ -41,7 +41,7 @@ function startWebApp(){
     });
 
     app.get('/(/|index.html)?', function(req, res) { // Serve index.html
-        res.send(default_template.replace('{{ content }}', fs.readFileSync('./static/index.html', 'utf8')));
+        res.send(default_template.replace('{{ content }}', fs.readFileSync('./static/defaut.html', 'utf8')));
     });
 
     app.listen(port,()=>{
