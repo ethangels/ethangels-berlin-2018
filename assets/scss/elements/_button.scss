@@ -20,6 +20,28 @@ button, [role=button] {
     }
   }
 
+  &.more {
+    &:after {
+      margin-left: 0.5rem;
+      content: "\f054";
+      font-family: _font(font-awesome);
+      font-size: _font(size-small);
+      float: right;
+      margin-top: 0.15rem;
+    }
+  }
+
+  &.submit {
+    &:after {
+      margin-left: 0.5rem;
+      content: "\f00c";
+      font-family: _font(font-awesome);
+      font-size: _font(size-small);
+      float: right;
+      margin-top: 0.05rem;
+    }
+  }
+
   &.small {
     padding: 0.4rem 0.8rem;
   }

@@ -39,6 +39,20 @@ button, [role=button] {
     button.primary:hover, [role=button].primary:hover {
       background-color: rgba(191, 147, 216, 0.8);
       color: white; }
+  button.more:after, [role=button].more:after {
+    margin-left: 0.5rem;
+    content: "\f054";
+    font-family: "Font Awesome";
+    font-size: 0.85rem;
+    float: right;
+    margin-top: 0.15rem; }
+  button.submit:after, [role=button].submit:after {
+    margin-left: 0.5rem;
+    content: "\f00c";
+    font-family: "Font Awesome";
+    font-size: 0.85rem;
+    float: right;
+    margin-top: 0.05rem; }
   button.small, [role=button].small {
     padding: 0.4rem 0.8rem; }
 
@@ -278,6 +292,13 @@ th {
 
 .visually-hidden {
   display: none; }
+
+@font-face {
+  font-family: 'Font Awesome';
+  font-style: italic;
+  font-weight: 400;
+  src: url("/fonts/fontawesome-webfont.eot"), url("/fonts/fontawesome-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/fontawesome-webfont.woff2") format("woff2"), url("/fonts/fontawesome-webfont.woff") format("woff"), url("/fonts/fontawesome-webfont.ttf") format("truetype"), url("/fonts/fontawesome-webfont.svg#FontAwesome") format("svg");
+  /* Legacy iOS */ }
 
 h1, h2, h3, h4, h5, h6, caption, .progressbar {
   font-weight: 400;
