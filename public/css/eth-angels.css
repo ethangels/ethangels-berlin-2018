@@ -64,7 +64,7 @@ header {
   max-width: 50rem;
   margin: 0 auto;
   background-color: white;
-  padding: 3rem; }
+  padding: 0 3rem 3rem 3rem; }
 
 [role=navigation] {
   background-color: white;
@@ -200,3 +200,32 @@ th {
 
 legend {
   font-size: 0.9rem; }
+
+body {
+  font-family: "Open Sans", Helvetica, sans-serif;
+  font-weight: 400;
+  line-height: 1.65rem;
+  font-size: 16px;
+  text-align: left;
+  margin: 0;
+  padding: 0; }
+  body p, body li, body input, body textarea {
+    font-size: 0.9rem; }
+    body p.small, body li.small, body input.small, body textarea.small {
+      font-size: 0.85rem; }
+  body p + p {
+    padding-top: 0.75rem; }
+  body table {
+    font-size: 0.85rem; }
+
+footer {
+  font-family: "Open Sans", Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+  line-height: 1.35rem; }
+
+.semi-bold {
+  font-weight: 500; }
+
+.bold {
+  font-weight: 700; }

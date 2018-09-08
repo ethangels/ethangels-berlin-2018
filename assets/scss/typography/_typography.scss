@@ -1,0 +1,41 @@
+body  {
+  font-family: _font(family-main);
+  font-weight: _font(weight-regular);
+  line-height: 1.65rem;
+  font-size: 16px;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+
+  p, li, input, textarea {
+    font-size: _font(size-default);
+
+    &.small {
+      font-size: _font(size-small)
+    }
+  }
+
+  p+p {
+    padding-top: 0.75rem;
+  }
+
+  table {
+    font-size: _font(size-small);
+  }
+
+}
+
+footer {
+  font-family: _font(family-heading);
+  font-weight: _font(weight-regular);
+  font-size: 0.8rem;
+  line-height: 1.35rem;
+}
+
+.semi-bold {
+  font-weight: _font(weight-semi-bold);
+}
+
+.bold {
+  font-weight: _font(weight-bold);
+}
