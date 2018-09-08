@@ -1,0 +1,19 @@
+a {
+  color: _palette(ea-primary);
+  text-decoration: none;
+
+  &.highlight {
+    border-bottom: 2px dashed _palette(red-11a);
+    transition: border-bottom 1s ease;
+
+    &:hover {
+      color: _palette(ea-primary);
+      border-bottom: 2px dashed _palette(ea-primary);
+    }
+  }
+
+  &.active {
+    border-bottom: 2px solid _palette(ea-primary);
+    padding-bottom: 0.25rem;
+  }
+}

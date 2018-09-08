@@ -10,6 +10,19 @@
   100% {
     opacity: 1; } }
 
+a {
+  color: #f88ac9;
+  text-decoration: none; }
+  a.highlight {
+    border-bottom: 2px dashed;
+    transition: border-bottom 1s ease; }
+    a.highlight:hover {
+      color: #f88ac9;
+      border-bottom: 2px dashed #f88ac9; }
+  a.active {
+    border-bottom: 2px solid #f88ac9;
+    padding-bottom: 0.25rem; }
+
 [role=main] {
   display: block;
   padding: 1.5rem 3rem 3rem 3rem;
@@ -25,9 +38,9 @@
       border-bottom: 0.1875rem solid;
       transition: border-bottom 0.75s ease; }
       [role=navigation] ul li a.selected, [role=navigation] ul li a.selected:hover {
-        border-bottom: 0.1875rem solid #990000; }
+        border-bottom: 0.1875rem solid #f88ac9; }
       [role=navigation] ul li a:hover {
-        border-bottom: 0.1875rem solid #ec0000; }
+        border-bottom: 0.1875rem solid; }
 
 nav {
   max-width: 80rem;

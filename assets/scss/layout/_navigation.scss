@@ -13,7 +13,7 @@
           transition: border-bottom 0.75s ease;
 
           &.selected, &.selected:hover {
-            border-bottom: 0.1875rem solid _palette(accessible-red);
+            border-bottom: 0.1875rem solid _palette(ea-primary);
           }
           &:hover {
             border-bottom: 0.1875rem solid _palette(red);

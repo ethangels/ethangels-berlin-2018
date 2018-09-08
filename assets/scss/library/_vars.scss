@@ -23,10 +23,8 @@ $breakpoint: (
 );
 
 $palette: (
-        accessible-red:       rgb(153, 0, 0),
-        red:                  rgb(236,0,0),
-        medium-red:           rgb(204,0,0),
-        bkd-red:              rgb(255,226,227),
+        ea-primary:           rgb(248,138,201),
+        ea-secondary:         rgb(255,164, 124),
 
         white:                rgb(255,255,255),
         graphite:             rgb(111,119,121),
@@ -39,17 +37,4 @@ $palette: (
         grey-25:              rgb(246,250,252),
         medium-grey:          rgb(195,222,231),
         dark-grey:            rgb(155,195,211),
-
-        accessible-green:     #017931,
-        accessible-yellow:    #946F00,
-        accessible-turquoise: #137E84,
-        accessible-purple:    #9E3667,
-        accessible-blue:      #0032E6,
-
-
-  // made up colours below
-
-        bkd-grey:             #ccc,
-        bkd-grey-light:       #fafafa,
-        border-grey:          rgb(230,230,230),
 );
