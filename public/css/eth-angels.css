@@ -69,7 +69,7 @@ input:focus, textarea:focus {
 
 ::placeholder {
   font: 400 0.9rem "Lato", Helvetica, sans-serif;
-  color: #deedf2;
+  color: #6f7779;
   font-style: italic; }
 
 label {
@@ -78,32 +78,6 @@ label {
   width: 100%;
   display: block;
   font-weight: 700; }
-
-table {
-  width: 100%;
-  text-align: left;
-  border-collapse: separate;
-  border-spacing: 0 0.25rem; }
-  table thead th {
-    padding: 0.75rem 0.5rem;
-    border-width: 0 0 0.2rem 0;
-    border-style: solid;
-    border-color: #bf93d8;
-    color: black; }
-  table tbody tr {
-    color: black; }
-    table tbody tr td:first-child, table tbody tr th[scope=row]:first-child {
-      border-left-style: solid;
-      border-top-left-radius: 0.5rem;
-      border-bottom-left-radius: 0.5rem; }
-    table tbody tr td:last-child {
-      border-right-style: solid;
-      border-bottom-right-radius: 0.5rem;
-      border-top-right-radius: 0.5rem; }
-    table tbody tr td {
-      border: solid 1px #f7f6f4;
-      padding: 0.5rem 0.5rem;
-      background-color: #f7f6f4; }
 
 body {
   background-image: url("../images/grid.svg");
