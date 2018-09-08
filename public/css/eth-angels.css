@@ -76,7 +76,8 @@ label {
   font-weight: 700; }
 
 body {
-  background: url("../images/grid.svg");
+  background-image: url("../images/grid.svg");
+  background-repeat: repeat;
   font-family: 'Lato';
   background-color: yellow;
   min-width: 570px; }
