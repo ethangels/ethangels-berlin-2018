@@ -29,7 +29,7 @@ function startWebApp(){
 
     // Test Serv.
     app.get('/', (req, res)=>{
-        res.send(default_template.replace('{{ content }}', fs.readFileSync('./static/report.html', 'utf8')));
+        res.send(default_template.replace('{{ content }}', fs.readFileSync('./static/report.html', 'utf8')).replace('{{ returndata }}',''));
     });
 
     app.get('/report', (req, res)=>{
