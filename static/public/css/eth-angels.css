@@ -1,0 +1,38 @@
+@-webkit-keyframes fadeinout {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes fadeinout {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+[role=main] {
+  display: block;
+  padding: 1.5rem 3rem 3rem 3rem;
+  background-color: blue; }
+
+[role=navigation] ul {
+  padding-bottom: 1rem; }
+  [role=navigation] ul li {
+    display: inline-block;
+    padding-right: 1.5rem; }
+    [role=navigation] ul li a {
+      padding-bottom: 0.3125rem;
+      border-bottom: 0.1875rem solid;
+      transition: border-bottom 0.75s ease; }
+      [role=navigation] ul li a.selected, [role=navigation] ul li a.selected:hover {
+        border-bottom: 0.1875rem solid #990000; }
+      [role=navigation] ul li a:hover {
+        border-bottom: 0.1875rem solid #ec0000; }
+
+nav {
+  max-width: 80rem;
+  margin: 0 auto; }
+
+.page {
+  color: red;
+  background: blue; }
