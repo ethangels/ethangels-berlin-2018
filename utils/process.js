@@ -1,9 +1,9 @@
 const categorize = require('esdb-categorize')
 const urlscan = require('urlscan-api')
 const epd = require('epd-autopr')
-
+const URLSCANAPIKEY = process.env.URLSCANAPIKEY
+const GITHUBACCESSKEY = process.env.GITHUBACCESSKEY
 module.exports = async (input) => {
-    const config = require('../config.js')
     //console.log(JSON.stringify(input))
     input.domain = input.url
     const categorizedinput = await new categorize().test( input )
@@ -16,9 +16,9 @@ module.exports = async (input) => {
         // TODO: Handle failed categorization issues.
     }
 
-    const urlscanout = await new urlscan().submit( config.URLSCANAPIKEY, input.domain )
+    const urlscanout = await new urlscan().submit( URLSCANAPIKEY, input.domain )
     input.urlscanuuid = urlscanout.uuid
     console.log('urlscanified: ' + JSON.stringify(input, null, 4))
-    var epdstatus = await epd( config.GITHUBACCESSKEY, input )
+    var epdstatus = await epd( GITHUBACCESSKEY, input )
     console.log(JSON.stringify(epdstatus,null,4))
 }
