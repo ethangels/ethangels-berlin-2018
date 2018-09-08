@@ -1,0 +1,115 @@
+.flex-group {
+
+  display: inline-block;
+
+  > div {
+    flex: none;
+  }
+
+}
+
+@media screen and (min-width: _breakpoint(step-two)) {
+
+  .flex-group {
+    display: flex;
+    flex-wrap: wrap;
+
+    > div, dl {
+      flex: 1;
+      margin-right: 0.75rem;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+
+    &.width-control {
+
+      > div {
+
+        &.twenty-five-percent {
+          width: 25%;
+          flex:none;
+        }
+
+        &.fifty-percent {
+          width: 50%;
+          flex: none;
+        }
+
+      }
+    }
+
+
+    &.flex-start {
+      justify-content: flex-start;
+
+      > div, a {
+        flex: none;
+        margin-right: 1rem;
+
+        &:last-of-type {
+          margin-right: 0;
+        }
+      }
+
+      > dl {
+        margin-right: 0.75rem;
+      }
+
+      > dd, dt {
+        flex: none;
+        margin-right: 0.75rem !important;
+      }
+    }
+
+    &.flex-end {
+      justify-content: flex-end;
+
+      > div {
+        flex: none;
+        margin-right: 1rem;
+
+        &:last-of-type {
+          margin-right: 0;
+        }
+      }
+
+      > dd, dt {
+        flex: none;
+        margin-right: 0.75rem !important;
+      }
+    }
+
+
+  }
+
+  .flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    > div {
+      flex: none;
+      margin-right: 1rem;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+
+    > dl {
+      flex: none;
+      margin-right: 3rem !important;
+    }
+
+  }
+}
+
+
+
+
+
+.flex-wrap {
+  flex-wrap: wrap;
+}

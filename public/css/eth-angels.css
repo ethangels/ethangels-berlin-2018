@@ -26,7 +26,66 @@ a {
 body {
   background: url("../images/grid.svg");
   font-family: 'Lato';
-  background-color: yellow; }
+  background-color: yellow;
+  min-width: 570px; }
+
+.flex-group {
+  display: inline-block; }
+  .flex-group > div {
+    flex: none; }
+
+@media screen and (min-width: 570px) {
+  .flex-group {
+    display: flex;
+    flex-wrap: wrap; }
+    .flex-group > div, .flex-group dl {
+      flex: 1;
+      margin-right: 0.75rem; }
+      .flex-group > div:last-of-type, .flex-group dl:last-of-type {
+        margin-right: 0; }
+    .flex-group.width-control > div.twenty-five-percent {
+      width: 25%;
+      flex: none; }
+    .flex-group.width-control > div.fifty-percent {
+      width: 50%;
+      flex: none; }
+    .flex-group.flex-start {
+      justify-content: flex-start; }
+      .flex-group.flex-start > div, .flex-group.flex-start a {
+        flex: none;
+        margin-right: 1rem; }
+        .flex-group.flex-start > div:last-of-type, .flex-group.flex-start a:last-of-type {
+          margin-right: 0; }
+      .flex-group.flex-start > dl {
+        margin-right: 0.75rem; }
+      .flex-group.flex-start > dd, .flex-group.flex-start dt {
+        flex: none;
+        margin-right: 0.75rem !important; }
+    .flex-group.flex-end {
+      justify-content: flex-end; }
+      .flex-group.flex-end > div {
+        flex: none;
+        margin-right: 1rem; }
+        .flex-group.flex-end > div:last-of-type {
+          margin-right: 0; }
+      .flex-group.flex-end > dd, .flex-group.flex-end dt {
+        flex: none;
+        margin-right: 0.75rem !important; }
+  .flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .flex-center > div {
+      flex: none;
+      margin-right: 1rem; }
+      .flex-center > div:last-of-type {
+        margin-right: 0; }
+    .flex-center > dl {
+      flex: none;
+      margin-right: 3rem !important; } }
+
+.flex-wrap {
+  flex-wrap: wrap; }
 
 footer {
   margin: 3rem auto 0 auto;
@@ -40,11 +99,19 @@ header {
   header a {
     color: white; }
   header > div {
-    max-width: 50rem;
     margin: 0 auto; }
     header > div .logo {
       height: 5rem;
+      min-width: 3rem;
       background: url("../images/ea-logo.svg");
+      background-repeat: no-repeat;
+      background-position: center 0rem;
+      text-indent: -999rem;
+      display: block; }
+    header > div .ea-tagline {
+      height: 1.5rem;
+      min-width: 3rem;
+      background: url("../images/ea-tagline.svg");
       background-repeat: no-repeat;
       background-position: center 0rem;
       text-indent: -999rem;
@@ -52,7 +119,9 @@ header {
 
 @media screen and (min-width: 50rem) {
   header > div .logo {
-    background-position: 0% 0%; } }
+    background-position: top left; }
+  header > div .ea-tagline {
+    background-position: center right; } }
 
 [role=main] {
   display: block;
