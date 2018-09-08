@@ -23,6 +23,22 @@ a {
     border-bottom: 2px solid #333333;
     padding-bottom: 0.25rem; }
 
+button {
+  padding: 0.75rem 1.25rem;
+  border-radius: 1.25rem;
+  font-size: 0.85rem;
+  font-weight: 400;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  display: inline-block; }
+  button.primary {
+    border: 2px solid #bf93d8;
+    background-color: #bf93d8;
+    color: white; }
+    button.primary:hover {
+      border: 2px solid;
+      color: white; }
+
 .field {
   padding: 0.75rem 0;
   max-width: 35rem; }
@@ -30,7 +46,7 @@ a {
     padding: 0 0;
     max-width: 100%; }
 
-input {
+input, textarea {
   border: 0.0625rem solid #deedf2;
   background: white;
   border-radius: 0.5rem;
@@ -40,7 +56,7 @@ input {
   box-sizing: border-box;
   width: 100%; }
 
-input:focus {
+input:focus, textarea:focus {
   border: 0.0625rem solid yellow;
   outline: none;
   -webkit-box-shadow: none;
@@ -257,6 +273,9 @@ td,
 th {
   padding: 0;
   text-align: left; }
+
+.visually-hidden {
+  display: none; }
 
 h1, h2, h3, h4, h5, h6, caption, .progressbar {
   font-weight: 400;

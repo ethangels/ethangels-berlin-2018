@@ -1,4 +1,4 @@
-input {
+input, textarea {
   border: 0.0625rem solid _palette(grey);
   background: _palette(white);
   border-radius: 0.5rem;
@@ -9,7 +9,7 @@ input {
   width: 100%;
 }
 
-input:focus {
+input:focus, textarea:focus {
   border: 0.0625rem solid yellow;
   outline: none;
   -webkit-box-shadow: none;
