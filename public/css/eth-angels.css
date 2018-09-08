@@ -11,20 +11,20 @@
     opacity: 1; } }
 
 a {
-  color: #f88ac9;
+  color: #bf93d8;
   text-decoration: none; }
   a.highlight {
     border-bottom: 2px dashed;
     transition: border-bottom 1s ease; }
     a.highlight:hover {
-      color: #f88ac9;
-      border-bottom: 2px dashed #f88ac9; }
+      color: #333333;
+      border-bottom: 2px dashed #333333; }
   a.active {
-    border-bottom: 2px solid #f88ac9;
+    border-bottom: 2px solid #333333;
     padding-bottom: 0.25rem; }
 
 body {
-  background: #f88ac9;
+  background: #f1f1f1;
   font-family: 'Lato'; }
 
 footer {
@@ -41,20 +41,19 @@ header {
   margin: 0 auto;
   text-align: center;
   background-color: white;
-  padding: 3rem; }
+  padding: 3rem 3rem 0 3rem; }
   header a {
     color: white; }
   header > div {
     max-width: 50rem;
     margin: 0 auto; }
     header > div .logo {
-      height: 116px;
+      height: 50px;
       background: url("../images/ea-logo.svg");
       background-repeat: no-repeat;
       background-position: center 0rem;
       text-indent: -999rem;
-      display: block;
-      background-size: 559px 116px; }
+      display: block; }
 
 @media screen and (min-width: 50rem) {
   header > div .logo {
@@ -80,7 +79,7 @@ header {
         border-bottom: 0.1875rem solid;
         transition: border-bottom 0.75s ease; }
         [role=navigation] ul li a.selected, [role=navigation] ul li a.selected:hover {
-          border-bottom: 0.1875rem solid #f88ac9; }
+          border-bottom: 0.1875rem solid #333333; }
         [role=navigation] ul li a:hover {
           border-bottom: 0.1875rem solid; }
 

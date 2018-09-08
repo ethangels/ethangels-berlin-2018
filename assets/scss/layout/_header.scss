@@ -3,7 +3,7 @@ header {
   margin: 0 auto;
   text-align: center;
   background-color: white;
-  padding: 3rem;
+  padding: 3rem 3rem 0 3rem;
 
   a {
     color: white;
@@ -16,14 +16,12 @@ header {
     //padding: 1rem 1.5rem;
 
     .logo {
-      height: 116px;
+      height: 50px;
       background: url("../images/ea-logo.svg");
       background-repeat: no-repeat;
       background-position: center 0rem;
       text-indent: -999rem;
-      //overflow: hidden;
       display: block;
-      background-size: 559px 116px;
     }
   }
 }
