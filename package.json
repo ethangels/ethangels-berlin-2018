@@ -1,0 +1,28 @@
+{
+  "name": "ethangels-app",
+  "version": "0.0.1",
+  "description": "Application for ETHAngels ETHBerlin Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ethangels/ethangels-app.git"
+  },
+  "author": "blurpesec & charlottefranklin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ethangels/ethangels-app/issues"
+  },
+  "homepage": "https://github.com/ethangels/ethangels-app#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "fs": "0.0.1-security",
+    "json": "^9.0.6",
+    "path": "^0.12.7",
+    "request": "^2.88.0"
+  }
+}
