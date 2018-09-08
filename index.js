@@ -25,7 +25,8 @@ function startWebApp(){
     app.use(bodyparser.json());
 
     // Static Files
-    app.use(express.static(path.join(__dirname, '/static/public')));
+    app.use(express.static(path.join(__dirname, '/public')));
+
 
     // Test Serv.
     app.get('/', (req, res)=>{
@@ -57,6 +58,7 @@ function startWebApp(){
     app.listen(port,()=>{
         console.log('Server started on port: ' + port);
     });
+
 }
 
 /* Start WebApp */

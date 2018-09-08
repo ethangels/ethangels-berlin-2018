@@ -8,7 +8,7 @@ gulp.task('hello', function() {
 gulp.task('sass', function(){
     return gulp.src('assets/scss/**/*.scss')
         .pipe(sass()) // Converts Sass to CSS with gulp-sass
-        .pipe(gulp.dest('static/public/css'))
+        .pipe(gulp.dest('public/css'))
 });
 
 gulp.task('watch', function(){

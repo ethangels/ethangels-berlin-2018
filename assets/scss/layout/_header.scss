@@ -1,0 +1,41 @@
+header {
+  max-width: _breakpoint(step-max);
+  margin: 0 auto;
+  text-align: center;
+  background-color: white;
+  padding: 3rem;
+
+  a {
+    color: white;
+    //height: auto;
+
+  }
+  > div {
+    max-width: _breakpoint(step-max);
+    margin: 0 auto;
+    padding: 1rem 1.5rem;
+
+    .logo {
+      background: url("../images/ea-logo.svg");
+      background-repeat: no-repeat;
+      background-position: center 0rem;
+      text-indent: -999rem;
+      overflow: hidden;
+      display: block;
+      background-size: 559px 116px;
+    }
+  }
+}
+
+@media screen and (min-width: _breakpoint(step-three)) {
+
+  header {
+
+    > div {
+
+      .logo {
+        background-position: 0% 0%;
+      }
+    }
+  }
+}

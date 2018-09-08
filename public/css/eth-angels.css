@@ -1,0 +1,154 @@
+@-webkit-keyframes fadeinout {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes fadeinout {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+a {
+  color: #f88ac9;
+  text-decoration: none; }
+  a.highlight {
+    border-bottom: 2px dashed;
+    transition: border-bottom 1s ease; }
+    a.highlight:hover {
+      color: #f88ac9;
+      border-bottom: 2px dashed #f88ac9; }
+  a.active {
+    border-bottom: 2px solid #f88ac9;
+    padding-bottom: 0.25rem; }
+
+body {
+  background: #f88ac9; }
+
+footer {
+  margin: 0 auto;
+  max-width: 50rem;
+  background-color: white;
+  padding: 3rem; }
+
+.footer-inner {
+  color: #6f7779; }
+
+header {
+  max-width: 50rem;
+  margin: 0 auto;
+  text-align: center;
+  background-color: white;
+  padding: 3rem; }
+  header a {
+    color: white; }
+  header > div {
+    max-width: 50rem;
+    margin: 0 auto;
+    padding: 1rem 1.5rem; }
+    header > div .logo {
+      background: url("../images/ea-logo.svg");
+      background-repeat: no-repeat;
+      background-position: center 0rem;
+      text-indent: -999rem;
+      overflow: hidden;
+      display: block;
+      background-size: 559px 116px; }
+
+@media screen and (min-width: 50rem) {
+  header > div .logo {
+    background-position: 0% 0%; } }
+
+[role=main] {
+  display: block;
+  max-width: 50rem;
+  margin: 0 auto;
+  background-color: white;
+  padding: 3rem; }
+
+[role=navigation] {
+  background-color: white;
+  padding: 3rem; }
+  [role=navigation] ul {
+    padding-bottom: 1rem; }
+    [role=navigation] ul li {
+      display: inline-block;
+      padding-right: 1.5rem; }
+      [role=navigation] ul li a {
+        padding-bottom: 0.3125rem;
+        border-bottom: 0.1875rem solid;
+        transition: border-bottom 0.75s ease; }
+        [role=navigation] ul li a.selected, [role=navigation] ul li a.selected:hover {
+          border-bottom: 0.1875rem solid #f88ac9; }
+        [role=navigation] ul li a:hover {
+          border-bottom: 0.1875rem solid; }
+
+nav {
+  max-width: 50rem;
+  margin: 0 auto; }
+
+.page {
+  color: red;
+  background: blue; }
+
+/*! minireset.css v0.0.3 | MIT License | github.com/jgthms/minireset.css */
+html,
+body,
+p,
+ol,
+ul,
+li,
+blockquote,
+figure,
+fieldset,
+legend,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal; }
+
+ul {
+  list-style: none; }
+
+button,
+input,
+select,
+textarea {
+  margin: 0; }
+
+html {
+  box-sizing: border-box; }
+
+img,
+embed,
+iframe,
+object,
+audio,
+video {
+  height: auto;
+  max-width: 100%; }
+
+iframe {
+  border: 0; }
+
+td,
+th {
+  padding: 0;
+  text-align: left; }
