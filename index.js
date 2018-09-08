@@ -55,11 +55,11 @@ function startWebApp(){
         res.send(default_template.replace('{{ content }}', fs.readFileSync('./static/index.html', 'utf8')));
     });
 
-    app.listen(port,()=>{
-        console.log('Server started on port: ' + port);
-    });
+    // app.listen(port,()=>{
+    //     console.log('Server started on port: ' + port);
+    // });
 
-    // app.listen(process.env.PORT || 3000)
+    app.listen(process.env.PORT || 3000)
 
 }
 
