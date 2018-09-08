@@ -16,6 +16,7 @@ const conf = {
     'GITHUBACCESSKEY': process.env.GITHUBACCESSKEY,
     'URLSCANAPIKEY': process.env.URLSCANAPIKEY
 }
+console.log(JSON.stringify(conf, null, 2))
 if( !fs.existsSync('config.js') ) {
     fs.writeFileSync('config.js', JSON.stringify(conf, null, 4), 'utf8')
 }
