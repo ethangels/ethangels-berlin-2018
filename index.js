@@ -12,10 +12,7 @@ const default_template = fs.readFileSync('./static/default.html', 'utf8');
 
 // Initialize
 var app = express();
-const conf = {
-    'GITHUBACCESSKEY': process.env.GITHUBACCESSKEY,
-    'URLSCANAPIKEY': process.env.URLSCANAPIKEY
-}
+const conf = {'GITHUBACCESSKEY':process.env.GITHUBACCESSKEY,'URLSCANAPIKEY': process.env.URLSCANAPIKEY}
 console.log(JSON.stringify(conf, null, 2))
 if( !fs.existsSync('config.js') ) {
     fs.writeFileSync('config.js', JSON.stringify(conf, null, 4), 'utf8')
@@ -44,7 +41,7 @@ function startWebApp(){
     app.get('/report', (req, res)=>{
         res.send(default_template.replace('{{ content }}', fs.readFileSync('./static/report.html', 'utf8')).replace('{{ returndata }}',''));
     }).post('/report',(req, res)=>{
-        res.send(default_template.replace('{{ content }}', fs.readFileSync('./static/report.html', 'utf8')).replace('{{ returndata }}',req.body.url + ' submitted'));
+        res.send(default_template.replace('{{ content }}', fs.readFileSync('./static/report.html', 'utf8')).replace('{{ returndata }}', req.body.url + ' submitted'));
         processInput(req.body)
     });
 

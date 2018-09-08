@@ -5,6 +5,8 @@ const URLSCANAPIKEY = process.env.URLSCANAPIKEY
 const GITHUBACCESSKEY = process.env.GITHUBACCESSKEY
 module.exports = async (input) => {
     //console.log(JSON.stringify(input))
+    input.url.replace('https://','').replace('http://','')
+    input.url = 'https://' + input.url
     input.domain = input.url
     const categorizedinput = await new categorize().test( input )
     //console.log('categorized: ' + JSON.stringify(categorizedinput, null, 4))
