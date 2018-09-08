@@ -76,14 +76,17 @@ header {
       padding-right: 1.5rem; }
       [role=navigation] ul li a {
         padding: 0.8rem;
-        background: #333333;
-        color: white; }
+        background-color: #333333;
+        color: white;
+        transition: background-color 0.75s ease; }
         [role=navigation] ul li a.selected, [role=navigation] ul li a.selected:hover {
           background: #333333;
-          color: #bf93d8; }
+          color: #bf93d8;
+          transition: color 0.75s ease; }
         [role=navigation] ul li a:hover {
           background: #333333;
-          color: #bf93d8; }
+          color: #bf93d8;
+          transition: color 0.75s ease; }
 
 nav {
   max-width: 50rem;

@@ -10,17 +10,19 @@
 
         a {
           padding: 0.8rem;
-          background: _palette(ea-primary);
+          background-color: _palette(ea-primary);
           color: white;
-          //transition: border-bottom 0.75s ease;
+          transition: background-color 0.75s ease;
 
           &.selected, &.selected:hover {
             background: _palette(ea-primary);
             color: _palette(ea-secondary);
+            transition: color 0.75s ease;
           }
           &:hover {
             background: _palette(ea-primary);
             color: _palette(ea-secondary);
+            transition: color 0.75s ease;
           }
         }
       }

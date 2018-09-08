@@ -23,9 +23,10 @@ $breakpoint: (
 );
 
 $palette: (
-        ea-primary:           rgb(51,51,51),
+        ea-primary:             rgb(51,51,51),
         //ea-primary:           rgb(248,138,201),
-        ea-secondary:         rgb(191,147,216),
+        ea-secondary:           rgb(191,147,216),
+        ea-secondary-80:        rgba(191,147,216, 0.8),
         //ea-secondary:         rgb(255,164, 124),
 
         white:                rgb(255,255,255),
