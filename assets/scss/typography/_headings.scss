@@ -1,0 +1,68 @@
+h1, h2, h3, h4, h5, h6, caption, .progressbar {
+  font-family: _font(family-heading);
+  font-weight: _font(weight-regular);
+  line-height: 1.5;
+}
+
+dt {
+  font-weight: _font(weight-bold);
+  font-size: _font(size-small);
+}
+
+dd {
+  font-size: _font(size-small);
+}
+
+h1 {
+  font-size: 1.75rem;
+  padding-bottom: 0.5em;
+  color: _palette(accessible-red);
+
+  &.boxed {
+    font-size: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+
+h2 {
+  font-size: 1.15rem;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  color: _palette(accessible-red);
+  font-weight: _font(weight-bold);
+
+  &.boxed {
+    padding-top: 0;
+    padding-bottom: 0;
+    //font-weight: _font(weight-semi-bold);
+  }
+
+}
+
+h3 {
+  font-size: 1rem;
+  padding-bottom: 1rem;
+
+  &.boxed {
+    padding-bottom: 0;
+  }
+}
+
+h4 {
+  font-size: _font(size-small);
+}
+
+caption {
+  font-size: 1.25rem;
+  padding-bottom: 0.5rem;
+  padding-top: 2rem;
+}
+
+th {
+  font-size: _font(size-small);
+  font-weight: _font(weight-bold);
+}
+
+legend {
+  font-size: 0.9rem;
+}

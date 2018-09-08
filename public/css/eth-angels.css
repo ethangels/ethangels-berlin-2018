@@ -151,3 +151,52 @@ td,
 th {
   padding: 0;
   text-align: left; }
+
+h1, h2, h3, h4, h5, h6, caption, .progressbar {
+  font-family: "Open Sans", Helvetica, sans-serif;
+  font-weight: 400;
+  line-height: 1.5; }
+
+dt {
+  font-weight: 700;
+  font-size: 0.85rem; }
+
+dd {
+  font-size: 0.85rem; }
+
+h1 {
+  font-size: 1.75rem;
+  padding-bottom: 0.5em; }
+  h1.boxed {
+    font-size: 1rem;
+    padding-bottom: 1rem; }
+
+h2 {
+  font-size: 1.15rem;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  font-weight: 700; }
+  h2.boxed {
+    padding-top: 0;
+    padding-bottom: 0; }
+
+h3 {
+  font-size: 1rem;
+  padding-bottom: 1rem; }
+  h3.boxed {
+    padding-bottom: 0; }
+
+h4 {
+  font-size: 0.85rem; }
+
+caption {
+  font-size: 1.25rem;
+  padding-bottom: 0.5rem;
+  padding-top: 2rem; }
+
+th {
+  font-size: 0.85rem;
+  font-weight: 700; }
+
+legend {
+  font-size: 0.9rem; }
