@@ -30,9 +30,8 @@ function startWebApp(){
 
     // Test Serv.
     app.get('/', (req, res)=>{
-        res.send(default_template.replace('{{ content }}', fs.readFileSync('./static/index.html', 'utf8')));
+        res.send(default_template.replace('{{ content }}', fs.readFileSync('./static/report.html', 'utf8')));
     });
-
 
     app.get('/report', (req, res)=>{
         res.send(default_template.replace('{{ content }}', fs.readFileSync('./static/report.html', 'utf8')));
