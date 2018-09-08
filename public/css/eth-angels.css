@@ -155,7 +155,8 @@ th {
 h1, h2, h3, h4, h5, h6, caption, .progressbar {
   font-family: "Open Sans", Helvetica, sans-serif;
   font-weight: 400;
-  line-height: 1.5; }
+  line-height: 1.5;
+  color: #bf93d8; }
 
 dt {
   font-weight: 700;
@@ -174,11 +175,7 @@ h1 {
 h2 {
   font-size: 1.15rem;
   padding-top: 2rem;
-  padding-bottom: 1rem;
-  font-weight: 700; }
-  h2.boxed {
-    padding-top: 0;
-    padding-bottom: 0; }
+  padding-bottom: 1rem; }
 
 h3 {
   font-size: 1rem;

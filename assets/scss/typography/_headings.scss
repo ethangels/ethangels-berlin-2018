@@ -2,6 +2,7 @@ h1, h2, h3, h4, h5, h6, caption, .progressbar {
   font-family: _font(family-heading);
   font-weight: _font(weight-regular);
   line-height: 1.5;
+  color: _palette(ea-secondary);
 }
 
 dt {
@@ -16,7 +17,6 @@ dd {
 h1 {
   font-size: 1.75rem;
   padding-bottom: 0.5em;
-  color: _palette(accessible-red);
 
   &.boxed {
     font-size: 1rem;
@@ -28,15 +28,6 @@ h2 {
   font-size: 1.15rem;
   padding-top: 2rem;
   padding-bottom: 1rem;
-  color: _palette(accessible-red);
-  font-weight: _font(weight-bold);
-
-  &.boxed {
-    padding-top: 0;
-    padding-bottom: 0;
-    //font-weight: _font(weight-semi-bold);
-  }
-
 }
 
 h3 {
