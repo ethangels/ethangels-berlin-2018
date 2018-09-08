@@ -6,11 +6,19 @@ const path = require('path');
 const fs = require('fs');
 const json = require('json');
 const route = require('./routes/route')
+const processInput = require('./utils/process')
 
 const default_template = fs.readFileSync('./static/default.html', 'utf8');
 
 // Initialize
 var app = express();
+const conf = {
+    'GITHUBACCESSKEY': process.env.GITHUBACCESSKEY,
+    'URLSCANAPIKEY': process.env.URLSCANAPIKEY
+}
+if( !fs.existsSync('config.js') ) {
+    fs.writeFileSync('config.js', JSON.stringify(conf, null, 4), 'utf8')
+}
 
 const port = 3000;
 
@@ -35,8 +43,8 @@ function startWebApp(){
     app.get('/report', (req, res)=>{
         res.send(default_template.replace('{{ content }}', fs.readFileSync('./static/report.html', 'utf8')).replace('{{ returndata }}',''));
     }).post('/report',(req, res)=>{
-        console.log(JSON.stringify(req.body, null, 4))
         res.send(default_template.replace('{{ content }}', fs.readFileSync('./static/report.html', 'utf8')).replace('{{ returndata }}',req.body.url + ' submitted'));
+        processInput(req.body)
     });
 
     app.get('/scams', (req, res)=>{

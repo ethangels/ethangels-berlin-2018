@@ -21,11 +21,15 @@
   "dependencies": {
     "body-parser": "^1.18.3",
     "cors": "^2.8.4",
+    "epd-autopr": "0.0.2",
+    "esdb-autopr": "0.0.2",
+    "esdb-categorize": "0.0.5",
     "express": "^4.16.3",
     "fs": "0.0.1-security",
     "json": "^9.0.6",
     "path": "^0.12.7",
-    "request": "^2.88.0"
+    "request": "^2.88.0",
+    "urlscan-api": "0.0.4"
   },
   "devDependencies": {
     "gulp": "^3.9.1",
