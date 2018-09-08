@@ -1,7 +1,5 @@
 [role=navigation] {
-  background-color: white;
-  padding: 1.5rem 3rem;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 1rem 3rem 3rem 3rem;
 
     ul {
       padding-bottom: 1rem;
@@ -11,15 +9,18 @@
         padding-right: 1.5rem;
 
         a {
-          padding-bottom: 0.3125rem;
-          border-bottom: 0.1875rem solid _palette(grey-10a);
-          transition: border-bottom 0.75s ease;
+          padding: 0.8rem;
+          background: _palette(ea-primary);
+          color: white;
+          //transition: border-bottom 0.75s ease;
 
           &.selected, &.selected:hover {
-            border-bottom: 0.1875rem solid _palette(ea-primary);
+            background: _palette(ea-primary);
+            color: _palette(ea-secondary);
           }
           &:hover {
-            border-bottom: 0.1875rem solid _palette(red);
+            background: _palette(ea-primary);
+            color: _palette(ea-secondary);
           }
         }
       }

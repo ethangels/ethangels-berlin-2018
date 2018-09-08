@@ -68,22 +68,22 @@ header {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); }
 
 [role=navigation] {
-  background-color: white;
-  padding: 1.5rem 3rem;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); }
+  padding: 1rem 3rem 3rem 3rem; }
   [role=navigation] ul {
     padding-bottom: 1rem; }
     [role=navigation] ul li {
       display: inline-block;
       padding-right: 1.5rem; }
       [role=navigation] ul li a {
-        padding-bottom: 0.3125rem;
-        border-bottom: 0.1875rem solid;
-        transition: border-bottom 0.75s ease; }
+        padding: 0.8rem;
+        background: #333333;
+        color: white; }
         [role=navigation] ul li a.selected, [role=navigation] ul li a.selected:hover {
-          border-bottom: 0.1875rem solid #333333; }
+          background: #333333;
+          color: #bf93d8; }
         [role=navigation] ul li a:hover {
-          border-bottom: 0.1875rem solid; }
+          background: #333333;
+          color: #bf93d8; }
 
 nav {
   max-width: 50rem;
