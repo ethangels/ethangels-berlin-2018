@@ -22,11 +22,10 @@ function startWebApp(){
     app.use(cors());
 
     // Body - parser
-    app.use(bodyparser.json());
+    app.use(bodyparser.urlencoded());
 
     // Static Files
     app.use(express.static(path.join(__dirname, '/public')));
-
 
     // Test Serv.
     app.get('/', (req, res)=>{
@@ -34,7 +33,10 @@ function startWebApp(){
     });
 
     app.get('/report', (req, res)=>{
-        res.send(default_template.replace('{{ content }}', fs.readFileSync('./static/report.html', 'utf8')));
+        res.send(default_template.replace('{{ content }}', fs.readFileSync('./static/report.html', 'utf8')).replace('{{ returndata }}',''));
+    }).post('/report',(req, res)=>{
+        console.log(JSON.stringify(req.body, null, 4))
+        res.send(default_template.replace('{{ content }}', fs.readFileSync('./static/report.html', 'utf8')).replace('{{ returndata }}',req.body.url + ' submitted'));
     });
 
     app.get('/scams', (req, res)=>{
