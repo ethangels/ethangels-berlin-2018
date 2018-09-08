@@ -1,0 +1,9 @@
+.field {
+  padding: 0.75rem 0;
+  max-width: 35rem;
+
+  &.boxed {
+    padding: 0 0;
+    max-width: 100%;
+  }
+}

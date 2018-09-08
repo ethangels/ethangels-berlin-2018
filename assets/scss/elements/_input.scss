@@ -1,0 +1,17 @@
+input {
+  border: 0.0625rem solid _palette(grey);
+  background: _palette(white);
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+::placeholder {
+  font: 400 0.9rem _font(family-main);
+  color: _palette(graphite);
+  font-style: italic;
+}
+

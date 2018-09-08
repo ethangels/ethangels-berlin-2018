@@ -4,23 +4,11 @@ h1, h2, h3, h4, h5, h6, caption, .progressbar {
   color: _palette(ea-secondary);
 }
 
-dt {
-  font-weight: _font(weight-bold);
-  font-size: _font(size-small);
-}
-
-dd {
-  font-size: _font(size-small);
-}
 
 h1 {
   font-size: 1.75rem;
   padding-bottom: 0.5em;
 
-  &.boxed {
-    font-size: 1rem;
-    padding-bottom: 1rem;
-  }
 }
 
 h2 {
@@ -32,10 +20,6 @@ h2 {
 h3 {
   font-size: 1rem;
   padding-bottom: 1rem;
-
-  &.boxed {
-    padding-bottom: 0;
-  }
 }
 
 h4 {

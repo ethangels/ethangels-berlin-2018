@@ -23,6 +23,35 @@ a {
     border-bottom: 2px solid #333333;
     padding-bottom: 0.25rem; }
 
+.field {
+  padding: 0.75rem 0;
+  max-width: 35rem; }
+  .field.boxed {
+    padding: 0 0;
+    max-width: 100%; }
+
+input {
+  border: 0.0625rem solid #deedf2;
+  background: white;
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%; }
+
+::placeholder {
+  font: 400 0.9rem "Lato", Helvetica, sans-serif;
+  color: #6f7779;
+  font-style: italic; }
+
+label {
+  padding-bottom: 0.5rem;
+  font-size: 0.9rem;
+  width: 100%;
+  display: block;
+  font-weight: 700; }
+
 body {
   background: url("../images/grid.svg");
   font-family: 'Lato';
@@ -95,7 +124,8 @@ footer {
 header {
   max-width: 50rem;
   margin: 3rem auto 2rem auto;
-  text-align: center; }
+  text-align: center;
+  min-width: 570px; }
   header a {
     color: white; }
   header > div {
@@ -109,7 +139,7 @@ header {
       text-indent: -999rem;
       display: block; }
     header > div .ea-tagline {
-      height: 1.5rem;
+      height: 2.5rem;
       min-width: 3rem;
       background: url("../images/ea-tagline.svg");
       background-repeat: no-repeat;
@@ -128,30 +158,29 @@ header {
   max-width: 50rem;
   margin: 0 auto;
   background-color: white;
-  padding: 3rem;
+  padding: 2rem 3rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 1rem; }
 
 [role=navigation] {
-  padding: 1rem 3rem 3rem 3rem; }
-  [role=navigation] ul {
-    padding-bottom: 1rem; }
-    [role=navigation] ul li {
-      display: inline-block;
-      padding-right: 1.5rem; }
-      [role=navigation] ul li a {
-        padding: 0.8rem 1rem;
-        background-color: #333333;
-        color: white;
-        transition: background-color 0.75s ease; }
-        [role=navigation] ul li a.selected, [role=navigation] ul li a.selected:hover {
-          background: #333333;
-          color: #bf93d8;
-          transition: color 0.75s ease; }
-        [role=navigation] ul li a:hover {
-          background: #333333;
-          color: #bf93d8;
-          transition: color 0.75s ease; }
+  padding-bottom: 1.5rem; }
+  [role=navigation] ul li {
+    display: inline-block;
+    padding-right: 1.5rem; }
+    [role=navigation] ul li a {
+      padding: 0.7rem 1rem;
+      background-color: #333333;
+      color: white;
+      transition: background-color 0.75s ease;
+      display: block; }
+      [role=navigation] ul li a.selected, [role=navigation] ul li a.selected:hover {
+        background: #333333;
+        color: #bf93d8;
+        transition: color 0.75s ease; }
+      [role=navigation] ul li a:hover {
+        background: #333333;
+        color: #bf93d8;
+        transition: color 0.75s ease; }
 
 nav {
   max-width: 50rem;
@@ -227,19 +256,9 @@ h1, h2, h3, h4, h5, h6, caption, .progressbar {
   line-height: 1.5;
   color: #bf93d8; }
 
-dt {
-  font-weight: 700;
-  font-size: 0.85rem; }
-
-dd {
-  font-size: 0.85rem; }
-
 h1 {
   font-size: 1.75rem;
   padding-bottom: 0.5em; }
-  h1.boxed {
-    font-size: 1rem;
-    padding-bottom: 1rem; }
 
 h2 {
   font-size: 1.15rem;
@@ -249,8 +268,6 @@ h2 {
 h3 {
   font-size: 1rem;
   padding-bottom: 1rem; }
-  h3.boxed {
-    padding-bottom: 0; }
 
 h4 {
   font-size: 0.85rem; }

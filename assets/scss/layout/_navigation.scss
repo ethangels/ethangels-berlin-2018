@@ -1,18 +1,18 @@
 [role=navigation] {
-  padding: 1rem 3rem 3rem 3rem;
+    padding-bottom: 1.5rem;
 
     ul {
-      padding-bottom: 1rem;
 
       li {
         display: inline-block;
         padding-right: 1.5rem;
 
         a {
-          padding: 0.8rem 1rem;
+          padding: 0.7rem 1rem;
           background-color: _palette(ea-primary);
           color: white;
           transition: background-color 0.75s ease;
+          display: block;
 
           &.selected, &.selected:hover {
             background: _palette(ea-primary);

@@ -2,6 +2,7 @@ header {
   max-width: _breakpoint(step-max);
   margin: 3rem auto 2rem auto;
   text-align: center;
+  min-width: 570px;
 
   a {
     color: white;
@@ -23,7 +24,7 @@ header {
     }
 
     .ea-tagline {
-      height: 1.5rem;
+      height: 2.5rem;
       min-width: 3rem;
       background: url("../images/ea-tagline.svg");
       background-repeat: no-repeat;
