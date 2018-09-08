@@ -9,6 +9,14 @@ input {
   width: 100%;
 }
 
+input:focus {
+  border: 0.0625rem solid yellow;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: yellow;
+}
+
 ::placeholder {
   font: 400 0.9rem _font(family-main);
   color: _palette(graphite);
