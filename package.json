@@ -6,7 +6,7 @@
   "scripts": {
     "test": "node index.js",
     "dev": "nodemon index.js",
-    "start": "node index.js"
+    "start": "node index.js --trace-warnings"
   },
   "repository": {
     "type": "git",
@@ -21,8 +21,9 @@
   "dependencies": {
     "body-parser": "^1.18.3",
     "cors": "^2.8.4",
+    "dotenv": "^6.0.0",
     "epd-autopr": "0.0.2",
-    "esdb-autopr": "0.0.2",
+    "esdb-autopr": "0.0.3",
     "esdb-categorize": "0.0.5",
     "express": "^4.16.3",
     "fs": "0.0.1-security",
