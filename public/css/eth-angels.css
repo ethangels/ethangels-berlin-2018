@@ -314,8 +314,9 @@ h1 {
 h2 {
   font-size: 1.15rem;
   padding-top: 1rem;
-  padding-bottom: 1rem;
-  color: #333333; }
+  padding-bottom: 1rem; }
+  h2.para {
+    color: #333333; }
 
 h3 {
   font-size: 1rem;
