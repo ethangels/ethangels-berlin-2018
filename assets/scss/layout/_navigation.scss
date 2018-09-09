@@ -40,4 +40,13 @@ nav {
   nav {
     text-align: center;
   }
+
+  [role=navigation] {
+    ul {
+      li {
+        padding-right: 0.25rem;
+      }
+
+    }
+  }
 }
