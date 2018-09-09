@@ -96,6 +96,11 @@ label {
   display: block;
   font-weight: 700; }
 
+ul {
+  list-style-type: disc;
+  list-style-position: inside;
+  list-style-image: none; }
+
 table {
   width: 100%;
   text-align: left;
@@ -260,9 +265,6 @@ h5,
 h6 {
   font-size: 100%;
   font-weight: normal; }
-
-ul {
-  list-style: none; }
 
 button,
 input,
