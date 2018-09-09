@@ -136,7 +136,9 @@ body {
   background-image: url("../images/grid.svg");
   background-repeat: repeat;
   font-family: 'Lato';
-  background-color: yellow; }
+  background-color: yellow;
+  padding: 1rem !important;
+  min-width: 420px; }
 
 .flex-group > div {
   flex: none; }
@@ -185,8 +187,7 @@ footer {
 header {
   max-width: 56rem;
   margin: 3rem auto 2rem auto;
-  text-align: center;
-  min-width: 570px; }
+  text-align: center; }
   header .logo {
     height: 5rem;
     min-width: 3rem;
@@ -244,6 +245,10 @@ header {
 nav {
   max-width: 56rem;
   margin: 0 auto; }
+
+@media screen and (max-width: 570px) {
+  nav {
+    text-align: center; } }
 
 .page {
   color: red;

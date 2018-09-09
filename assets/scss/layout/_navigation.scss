@@ -34,3 +34,10 @@ nav {
   max-width: _breakpoint(step-max);
   margin: 0 auto;
 }
+
+@media screen and (max-width: _breakpoint(step-two)) {
+
+  nav {
+    text-align: center;
+  }
+}
