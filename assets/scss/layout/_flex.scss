@@ -22,6 +22,28 @@
         margin-right: 0;
       }
     }
+
+    &.flex-start {
+      justify-content: flex-start;
+
+      > div, a {
+        flex: none;
+        margin-right: 1rem;
+
+        &:last-of-type {
+          margin-right: 0;
+        }
+      }
+
+      > dl {
+        margin-right: 0.75rem;
+      }
+
+      > dd, dt {
+        flex: none;
+        margin-right: 0.75rem !important;
+      }
+    }
   }
 
   .flex-center {
