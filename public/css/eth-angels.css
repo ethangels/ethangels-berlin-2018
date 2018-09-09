@@ -137,8 +137,7 @@ body {
   background-repeat: repeat;
   font-family: 'Lato';
   background-color: yellow;
-  padding: 1rem !important;
-  min-width: 420px; }
+  padding: 1rem !important; }
 
 .flex-group > div {
   flex: none; }
