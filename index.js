@@ -29,7 +29,7 @@ function startWebApp(){
     app.use(cors());
 
     // Body - parser
-    app.use(bodyparser.urlencoded());
+    app.use(express.urlencoded({ extended: true }));
 
     // Static Files
     app.use(express.static(path.join(__dirname, '/public')));
